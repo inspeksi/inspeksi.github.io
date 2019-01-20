@@ -1,5 +1,5 @@
 html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
-body { background: #d2d0c6; font-size: 15px; line-height: 1.64; }
+body { background: #fafafa; font-size: 15px; line-height: 1.64; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px; }
 h1,h4 { font-weight: 700; margin-bottom: 10px; }
@@ -81,7 +81,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .navbar .nav > li { display: block; float: none; height: 80px; }
 .navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
 .navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #ff4141; color: #FFFFFF; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #41c4f4; color: #FFFFFF; }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
 
@@ -421,3 +421,46 @@ figure.effect:hover p {
     display: none;
     opacity: 0;
 }
+
+.blogcard {
+	border: none;
+	margin-bottom: 30px;
+	background-color: #fff;
+	height: 100%;
+  }
+  
+  .modal-content {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+		flex-direction: column;
+	pointer-events: auto;
+	background-color: #FFFFFF;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 0.15rem;
+	outline: 0; }
+  
+  .modal-header {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: start;
+		align-items: flex-start;
+	-ms-flex-pack: justify;
+		justify-content: space-between;
+	padding: 15px;
+	border-bottom: 1px solid #E3F2FD;
+	border-top-left-radius: 0.3rem;
+	border-top-right-radius: 0.3rem; }
+  
+  .modal-footer {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+		align-items: center;
+	-ms-flex-pack: end;
+		justify-content: flex-end;
+	padding: 15px;
+	border-top: 1px solid #ffffff; }
+  
