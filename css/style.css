@@ -422,12 +422,32 @@ figure.effect:hover p {
     opacity: 0;
 }
 
+.card .card-body .icon-box {
+	padding: 20px 0;
+	color: #2196F3; }
+  
+
+.card {
+	border: none;
+	margin-bottom: 30px;
+	height: 90%;
+  }
+
 .blogcard {
 	border: none;
 	margin-bottom: 30px;
 	background-color: #fff;
 	height: 100%;
   }
+
+  .blogtitle {
+	color: #2196F3 !important;
+	outline: 0;
+	text-decoration: none !important; 
+  }
+
+  .card-outline-primary {
+	border: solid 1px #2196F3; }
   
   .modal-content {
 	position: relative;
