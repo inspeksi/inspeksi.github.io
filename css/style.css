@@ -484,3 +484,11 @@ figure.effect:hover p {
 	padding: 15px;
 	border-top: 1px solid #ffffff; }
   
+.list-default > li:before {
+	content: "\f21b";
+	position: absolute;
+	left: -25px;
+	top: 8px;
+	font-size: 10px;
+	color: #2196F3;
+	font-family: "Ionicons"; }
