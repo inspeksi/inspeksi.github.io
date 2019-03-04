@@ -433,6 +433,10 @@ figure.effect:hover p {
 	height: 90%;
   }
 
+  .card-img-top {
+	height: 200px;
+  }
+
 .blogcard {
 	border: none;
 	margin-bottom: 30px;
