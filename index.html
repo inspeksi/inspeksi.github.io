@@ -1,456 +1,510 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
+    <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inspeksi - The Smart Defect Detector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Mohamed El Shatshat">
 	<meta name="description" content="Inspeksi - The Smart Defect Detector" />
-	<link rel="icon" href="/img/icon.png">
-
-
-    <title>Inspeksi - The Smart Defect Detector</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-
-		<link href="/css/style.css" rel="stylesheet" />
-
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="icon" href="img/icon.png">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+    <!--header-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ion-grid icon-sm"></span>
+            </button>
+        <a class="navbar-brand hero-heading" href="#">inspeksi</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#main">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#features">Features</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#team">Team</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--main section-->
+    <section class="bg-texture hero" id="main" style="overflow-y:hidden;">
+        <div class="container" style="align-items:center;">
+            <div class="row d-md-flex brand">
+                <div class="col-md-6 hidden-sm-down wow fadeIn">
+                    <img class="img-fluid mx-auto d-block" src="http://meetfibi.com/img/blimp.png"/>
+                </div>
+                <div class="col-md-6 col-sm-12 text-white wow fadeIn" style="display: flex;
+justify-content: center;
+flex-direction: column;">
+                    <h2 class="pt-4">Welcome to inspeksi</h2>
+                    <p class="mt-5">
+						<a href="#team" class="btn btn-white mb-2 page-scroll">Meet the Team</a>
+                        <a href="#blog" class="btn btn-primary mr-2 mb-2 page-scroll">Blog</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About-->
+    <section class="bg-white p-0">
+        <div class="container-fluid">
+            <div class="row d-md-flex mt-5">
+                <div class="col-sm-6 p-0 wow fadeInLeft">
+                    <div style="position:relative;padding-bottom:76%"><iframe src="https://gfycat.com/ifr/MeekFrailBighornedsheep" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;pointer-events: none; vertical-align: middle" allowfullscreen></iframe></div>
+                </div>
+                <div class="col-sm-6 pl-5 pr-5 pt-5 pb-4 wow fadeInRight">
+                    <h3><a href="#">Our Vision</a></h3>
+                    <p class="lead pt-4">Manufacturing processes have limitations that cause deviations and deformities, thus require inspections. Current surface finishes inspections rely on custom processes with expensive tools or human labor.
+                    </p>
+                    <p class="lead pt-4">
+                        We aim to fix that with inspeksi, the smart defect detector. Our plug and play solution offers a wide range of automated features to make inspection of newly manufactured parts fast, efficient, and effective. Simply insert your part into the enclosure and watch how the automated system scans your part and detects defects using a sophisticated AI model that only increases in accuracy as you continue to use the product.</p>
+
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!--features-->
+    <section class="bg-orange" id="features">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6 col-sm-8 mx-auto text-center wow fadeIn">
+                    <h2 class="text-primary">Features</h2>
+                    <p class="lead mt-4">
+						What makes us great
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5 text-center">
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/chip.svg" height="50px">
+                            </div>
+                            <h6>Autonomy</h6>
+                            <p>
+                                We've made inspeksi easy to use by letting it do all the work for you! Our sytem runs at the press of a button giving you all the details on the defects on your product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/monitor.svg" height="50px">
+                            </div>
+                            <h6>Accuracy</h6>
+                            <p>
+                                Our defect detection algorithm is highly accurate, and even becomes more effective as the product learns about defects while you use it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/machinery.svg" height="50px">
+                            </div>
+                            <h6>Control</h6>
+                            <p>
+                                Our device is customizable to your needs. You can save the positions that you want to scan on your part using our record and play back feature.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/flash.svg" height="50px">
+                            </div>
+                            <h6>Fast</h6>
+                            <p>
+                                Find out if a part is defective in mere seconds. Our system scans several parts a minute, and gives you the results you need almost instantly. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/machinery.svg" height="50px">
+                            </div>
+                            <h6>Generalizable</h6>
+                            <p>
+                                Specify what you want inspeksi to consider a defective part, and what is acceptable using our interactive user interface.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/flash.svg" height="50px">
+                            </div>
+                            <h6>Plug and Play</h6>
+                            <p>
+                                All you need to get started is an outlet, and a part that you want to inspect, simple as that! If you want, you can get fancy with it and inter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-					<div id="top" class="jumbotron">
-						<div class="container">
-							<h1>Inspeksi</h1>
-							<p class="lead">The Smart Defect Detector</p>
-						</div>
-
-						<div class="overlay"></div>
-
-						<a href="#about" class="scroll-down">
-							<span class="glyphicon glyphicon-chevron-down"></span>
-						</a>
-					</div>
-
-					<nav class="navbar navbar-default" id="navbar-example" role="navigation">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse navbar-ex1-collapse">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#about">About</a></li>
-								<li><a href="#features">Features</a></li>
-								<li><a href="#team">Team</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</nav>
-
-
-		<div class="background-white">
-			<div id="about" class="container">
-				<h2>Inspeksi</h2>
-<p class="lead">What am I</p>
-
-<hr />
-
-<div class="row" style="padding-bottom: 30px">
-	<div class="col-sm-8">
-		<img src="/img/team_photo.jpg" alt="Inspeksi Image" width="100%" height="100%" />
-	</div>
-	<div class="col-sm-4">
-		<h3>Our Vision</h3>
-		<p>
-			Problem Statement: there is no low-cost automated solution for visual inspection of high end consumer facing products.
-			 
-
-			Our Solution: Use low cost materials and hardware and a highly sophisticated image processing algorithm to detect defects in products.
-		</p>
-	</div>
-</div>
-</div>
-		</div>
-
-
-<div id="features" class="container">
-	<h2>Features</h2>
-	<p class="lead">
-		What makes us great
-	</p>
-
-<hr />
-
-<p>
-	Generalizable
-
-	Sophisticated
-
-	Modular
-
-	Fast
-	 
-</p>
-
-
-</div>
-
-
-
-
-<div class="background-white">
-	<div id="team" class="container">
-			<h2>Team</h2>
-		<div class="col-sm-8">
-			<img src="/img/team_photo.jpg" alt="Inspeksi Image" width="246" height="246" />
-		</div>
-
-		<hr />
-
-</div>
-
-
-
-
-<!--blog-->
-<div id="blog" class="container">
-	<h2>Blog</h2>
-	<p class="lead">
-			The latest news about Inspeksi.
-	</p>
-
-<hr />
-
-
-
-
-<div class="container">
-	<div class="row">
-		<div class="row d-md-flex mt-5">
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/team_photo.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Jan. 14 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Mohamed El Shatshat &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 1 min
+    <!--team-->
+    <section class="bg-white" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-8 mx-auto text-center">
+						<h2 class="text-primary">Our Team</h2>
+						<p class="lead pt-3">
+							Meet everyone working on inspeksi.
 						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Team Photo
-							</p>
-						</h5>
-						<p class="card-text">Left to right - Toni, Herman, Mohamed, Lalit, Rey</p>
 					</div>
 				</div>
-			</div>
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/enclosureRedesign.png" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Jan. 18 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Herman Grewal &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 5 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Enclosure Redesigns
-							</p>
-						</h5>
-						<p class="card-text">
-							The material for the enclosure design is now sourced from the Engineering Machine Shop. Special thanks to
-						</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#boxRedesign" class="card-link" data-toggle="modal" data-target="#boxRedesign"><strong>Read more</strong></a>
-						</div>
+	
+				<div class="row d-md-flex mt-5 text-center">
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/toni.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Oluwatoni Ogunmade</h5>
+						<p>Robot Design Lead</p>
 					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/herman.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Herman Grewal</h5>
+						<p>Mechanical Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/mo.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Mohamed El Shatshat</h5>
+						<p>Product Design and Integration Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/lalit.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Lalit Lal</h5>
+						<p>Electrical Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/rey.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Rey Wiyatno</h5>
+						<p>AI/Vision</p>
+					</div>	
 				</div>
 			</div>
-			
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
+		</section>
+
+    <!--blog-->
+    <section class="bg-light" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center ">
+                    <h2 class="text-primary">From Our Blog</h2>
+                    <p class="lead">
+                        The latest news about Fibi.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-md-flex mt-5">
+				<div class="col-sm-4 mt-2 wow fadeIn">
 					<div class="blogcard">
-						<img class="card-img-top" src="img/light_ring.jpg" alt="Image">
+						<img class="card-img-top" src="img/team_photo.jpg" alt="Image">
 						<div class="card-body">
 							<p class="card-text text-muted small-xl">
-								<em class="ion-ios-calendar-outline"></em> Jan. 21 '19 &nbsp;&nbsp;
+								<em class="ion-ios-calendar-outline"></em> Jan. 14 '19 &nbsp;&nbsp;
 								<em class="ion-ios-person-outline"></em> Mohamed El Shatshat &nbsp;&nbsp;
 								<em class="ion-ios-time-outline"></em> 1 min
 							</p>
 							<h5 class="card-title">
 								<p class="blogtitle">
-									Lighting Developments
+									Team Photo
+								</p>
+							</h5>
+							<p class="card-text">Left to right - Toni, Herman, Mohamed, Lalit, Rey</p>
+						</div>
+					</div>
+				</div>
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/enclosureRedesign.png" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Jan. 18 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Herman Grewal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Enclosure Redesigns
 								</p>
 							</h5>
 							<p class="card-text">
-									The Neopixel LED ring came in and is quite bright. 
-									It also fits over the camera nicely, allowing us to change our mounting strategy.							</p>
+								The material for the enclosure design is now sourced from the Engineering Machine Shop. Special thanks to
+							</p>
 							<div class="card-body text-right" style="height:0px">
-								<a href="#lightingDev" class="card-link" data-toggle="modal" data-target="#lightingDev"><strong>Read more</strong></a>
+								<a href="#boxRedesign" class="card-link" data-toggle="modal" data-target="#boxRedesign"><strong>Read more</strong></a>
 							</div>
 						</div>
 					</div>
 				</div>
 				
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/instance_segmentation.png" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 3 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Rey Wiyatno &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 5 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								From Object Detection to Instance Segmentation
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+						<div class="blogcard">
+							<img class="card-img-top" src="img/light_ring.jpg" alt="Image">
+							<div class="card-body">
+								<p class="card-text text-muted small-xl">
+									<em class="ion-ios-calendar-outline"></em> Jan. 21 '19 &nbsp;&nbsp;
+									<em class="ion-ios-person-outline"></em> Mohamed El Shatshat &nbsp;&nbsp;
+									<em class="ion-ios-time-outline"></em> 1 min
+								</p>
+								<h5 class="card-title">
+									<p class="blogtitle">
+										Lighting Developments
+									</p>
+								</h5>
+								<p class="card-text">
+										The Neopixel LED ring came in and is quite bright. 
+										It also fits over the camera nicely, allowing us to change our mounting strategy.							</p>
+								<div class="card-body text-right" style="height:0px">
+									<a href="#lightingDev" class="card-link" data-toggle="modal" data-target="#lightingDev"><strong>Read more</strong></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/instance_segmentation.png" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 3 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Rey Wiyatno &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
 							</p>
-						</h5>
-						<p class="card-text">
-							The algorithm used for the initial demo in the final design project was the object detection algorithm called the Single-shot Multibox Detector (SSD). The algorithm is now changed to instance segmentation model called the Mask R-CNN.
-						</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#instanceSegmentation" class="card-link" data-toggle="modal" data-target="#instanceSegmentation"><strong>Read more</strong></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/dynamixel_comm_pic.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 5 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 3 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Establishing Communication with Dynamixel Smart Serial Servos
+							<h5 class="card-title">
+								<p class="blogtitle">
+									From Object Detection to Instance Segmentation
+								</p>
+							</h5>
+							<p class="card-text">
+								The algorithm used for the initial demo in the final design project was the object detection algorithm called the Single-shot Multibox Detector (SSD). The algorithm is now changed to instance segmentation model called the Mask R-CNN.
 							</p>
-						</h5>
-						<p class="card-text">
-							Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
-						</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#motorComm" class="card-link" data-toggle="modal" data-target="#lightingDev"><strong>Read more</strong></a>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#instanceSegmentation" class="card-link" data-toggle="modal" data-target="#instanceSegmentation"><strong>Read more</strong></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/arm_redesign_pic.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 17 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 5 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Robotic Arm Redesigns
-							</p>
-						</h5>
-						<p class="card-text">
-							Changes made to the initial design of the robotic arm after manufacturing and assembly to reduce the arm's weight and improve the strength.
-						</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#armRedesign" class="card-link" data-toggle="modal" data-target="#armRedesign"><strong>Read more</strong></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/motor_controllers.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 7 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 3 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Completing Electrical Assembly of Robotic Arm
-							</p>
-						</h5>
-						<p class="card-text">
-							The team is using various electronics that operate at different voltage levels. Since various parts communicate with each other, some interfacing and electronic design is required.							</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#electricalAssembly" class="card-link" data-toggle="modal" data-target="#electricalAssembly"><strong>Read more</strong></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--                -->
-			<div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/backdrive_pic.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 24 '19 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 4 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">
-								Recording arm positions and playback
-							</p>
-						</h5>
-						<p class="card-text">
-							Utilizing the back-driveability of the arms to allow positions to be recorded and played back.							</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#backdrive" class="card-link" data-toggle="modal" data-target="#backdrive"><strong>Read more</strong></a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- <div class="col-sm-4 mt-2 wow fadeIn">
-				<div class="blogcard">
-					<img class="card-img-top" src="img/blog-teleopExample.jpg" alt="Image">
-					<div class="card-body">
-						<p class="card-text text-muted small-xl">
-							<em class="ion-ios-calendar-outline"></em> Feb. 23 '18 &nbsp;&nbsp;
-							<em class="ion-ios-person-outline"></em> Kelvin Chan &nbsp;&nbsp;
-							<em class="ion-ios-time-outline"></em> 3 min
-						</p>
-						<h5 class="card-title">
-							<p class="blogtitle">Platform Control Update</p>
-						</h5>
-						<p class="card-text">
-							Fibi is learning how to fly! We are now tuning its control parameters and testing them through our new teleop program. Once it response well to our teleop commands, it will be ready for its final test!
-						</p>
-						<div class="card-body text-right" style="height:0px">
-							<a href="#controlModal" class="card-link" data-toggle="modal" data-target="#controlModal"><strong>Read more</strong></a>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!--                -->
-
-
-		</div>
-
-	</div>
-</div>
-
-
-<div class="background-white">
-	<div id="contact" class="container">
-	<h2>Contact</h2>
-	<hr />
-
-	<div class="row">
-		<div class="col-md-6">
-			<ul class="no-bullets">
-				<li>
-					<a href="https://github.com/inspeksi" target="_blank">
-						<i class="fa fa-github" aria-hidden="true" style="font-size:2.5em; width:50px"></i>
-						https://github.com/inspeksi				</a>
-				</li>
-			</ul>
-		</div>
-		<!-- <div class="col-md-6">
-			<ul class="no-bullets">
-				<li>
-					<a href="https://ca.linkedin.com/in/mohamed-el-shatshat-082b2885/" target="_blank">
-						<i class="fa fa-linkedin" aria-hidden="true" style="font-size:2.5em; width:50px"></i>
-						http://linkedin.com/in/mohamed-el-shatshat/				</a>
-				</li>
-			</ul>
-		</div> -->
-	</div>
-
-	<hr />
-
-<!-- <div class="text-center">
-		<div>
-				<h2>Resume</h2>
-
-<a href="doc/MohamedElShatshatResume2017.pdf" class="btn btn-default" target="_blank">Download</a>
-		</div>
-</div> -->
-
-		</div>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-	<script type="text/javascript" src="/js/script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 	
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/dynamixel_comm_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 5 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 3 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Establishing Communication with Dynamixel Smart Serial Servos
+								</p>
+							</h5>
+							<p class="card-text">
+								Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#motorComm" class="card-link" data-toggle="modal" data-target="#lightingDev"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/arm_redesign_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 17 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Robotic Arm Redesigns
+								</p>
+							</h5>
+							<p class="card-text">
+								Changes made to the initial design of the robotic arm after manufacturing and assembly to reduce the arm's weight and improve the strength.
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#armRedesign" class="card-link" data-toggle="modal" data-target="#armRedesign"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/motor_controllers.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 7 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 3 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Completing Electrical Assembly of Robotic Arm
+								</p>
+							</h5>
+							<p class="card-text">
+								The team is using various electronics that operate at different voltage levels. Since various parts communicate with each other, some interfacing and electronic design is required.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#electricalAssembly" class="card-link" data-toggle="modal" data-target="#electricalAssembly"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/backdrive_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 24 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 4 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Recording arm positions and playback
+								</p>
+							</h5>
+							<p class="card-text">
+								Utilizing the back-driveability of the arms to allow positions to be recorded and played back.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#backdrive" class="card-link" data-toggle="modal" data-target="#backdrive"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- <div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/blog-teleopExample.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 23 '18 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Kelvin Chan &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 3 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">Platform Control Update</p>
+							</h5>
+							<p class="card-text">
+								Fibi is learning how to fly! We are now tuning its control parameters and testing them through our new teleop program. Once it response well to our teleop commands, it will be ready for its final test!
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#controlModal" class="card-link" data-toggle="modal" data-target="#controlModal"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!--                -->
+					<!---->
+            </div>
+        </div>
+    </section>
 
+    <!--contact-->
+    <section class="bg-texture-collage p-0" id="contact">
+        <div class="container">
+            <div class="row d-md-flex text-white text-center wow fadeIn">
+
+                <div class="col-sm-6 p-5">
+                    <p><em class="ion-ios-email-outline icon-md"></em></p>
+                    <p class="lead">inspeksi@gmail.com</p>
+                </div>
+                <div class="col-sm-6 p-5">
+                    <p><em class="ion-ios-location-outline icon-md"></em></p>
+                    <p class="lead">Waterloo, Canada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="bg-footer" id="connect">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                    <h1>flōt</h1>
+                    <p class="mt-4" style="display: inline-block">
+                        <a href="https://github.com/inspeksi" target="_blank"><em class="ion-social-github text-facebook-alt icon-sm mr-3"></em></a>
+                    </p>
+                    <p class="pt-2 text-muted">
+                        &copy; 2017 Comply Theme. A Free Bootstrap 4 product landing page theme by
+                        <a href="https://wireddots.com/">Wired Dots</a>. Developed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
+                    </p>
+                    <p class="pt-2 text-muted">
+                        Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="/js/script.js"></script>
 </body>
+
 
 	<!-- Portfolio Modal 1 -->
 	<div id="boxRedesign" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-	
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Enclosure Redesign</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				</div>
-	
-				<div class="modal-body text-center">
-					<img class="card-img-top img-thumbnail" src="img/enclosureRedesign1.jpg" alt="Image" style="max-width:50%; ">
-					<p style="text-align: justify; padding-top: 5%">
-						In order to source the material from the Machine Shop, the availability had to be considered. 
-						The original 1/2'’ angle brackets had to be changed to the 3/4'’ angle brackets. 
-						This required a change to the hole positions. In addition, space for the nut had to be verified. 
-						In the original design, there was a 1/16’’ gap between the frame and the panels in some locations. 
-						To resolve this, a notch was made in the angle bracket to create a closed seam at the enclosure edges. 
-						The final cost of the enclosure including material, machining and tax is $208.49. Some additional work was 
-						done to clean rough edges.
-					</p>
-					<img class="card-img-top img-thumbnail" src="img/enclosureRedesign2.jpg" alt="Image" style="max-width:50%; ">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="lightingDev" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
 		
 				<!-- Modal content-->
@@ -461,137 +515,164 @@
 					</div>
 		
 					<div class="modal-body text-center">
-						<img class="card-img-top img-thumbnail" src="img/light_ring.jpg" alt="Image" style="max-width:50%; ">
+						<img class="card-img-top img-thumbnail" src="img/enclosureRedesign1.jpg" alt="Image" style="max-width:50%; ">
 						<p style="text-align: justify; padding-top: 5%">
-								The lights were originally were going to be placed underneath the camera, 
-								but with the the size of the ring light allows it to be placed right over the lens. The next thing is to interface with the camera. The Adafruit tutorial for the lights includes a guide for controlling the lights with a python script, as opposed to the included Arduino library. This will be used to control the lights via the Raspberry Pi.
-							</p>
+							In order to source the material from the Machine Shop, the availability had to be considered. 
+							The original 1/2'’ angle brackets had to be changed to the 3/4'’ angle brackets. 
+							This required a change to the hole positions. In addition, space for the nut had to be verified. 
+							In the original design, there was a 1/16’’ gap between the frame and the panels in some locations. 
+							To resolve this, a notch was made in the angle bracket to create a closed seam at the enclosure edges. 
+							The final cost of the enclosure including material, machining and tax is $208.49. Some additional work was 
+							done to clean rough edges.
+						</p>
+						<img class="card-img-top img-thumbnail" src="img/enclosureRedesign2.jpg" alt="Image" style="max-width:50%; ">
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div id="instanceSegmentation" class="modal fade" role="dialog">
+	
+		<div id="lightingDev" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+			
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Enclosure Redesign</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+			
+						<div class="modal-body text-center">
+							<img class="card-img-top img-thumbnail" src="img/light_ring.jpg" alt="Image" style="max-width:50%; ">
+							<p style="text-align: justify; padding-top: 5%">
+									The lights were originally were going to be placed underneath the camera, 
+									but with the the size of the ring light allows it to be placed right over the lens. The next thing is to interface with the camera. The Adafruit tutorial for the lights includes a guide for controlling the lights with a python script, as opposed to the included Arduino library. This will be used to control the lights via the Raspberry Pi.
+								</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div id="instanceSegmentation" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+			
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Instance Segmentation</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+			
+						<div class="modal-body text-center">
+							<!-- <img class="card-img-top img-thumbnail" src="img/enclosureRedesign.png" alt="Image" style="max-width:50%; "> -->
+							<p style="text-align: justify; padding-top: 5%">
+									In the previous term, an object detection algorithm called the Single-shot Multibox Detector (SSD) (Liu et al., 2016) was used to classify and localize defects in an image. The algorithm however has a limitation since it can only localizes defects in terms of bounding boxes, and thus is not able to quantify the size of the defects perfectly. An example of the output from object detection model is shown in the figure below.
+							</p>
+							<img src="img/singleshot.gif" style="max-width:50%; ">
+							<p style="text-align: justify; padding-top: 5%">
+									In contrast, instance segmentation algorithms, like the Mask R-CNN (He et al., 2017), are designed to localize object in an image on the pixel level. This is definitely desirable for the application of detecting defects, since one of the metrics to quantify defects are by measuring the size of the defects. In order to test the algorithm, a Mask R-CNN model was trained on a small dataset that contains images with scratches. Indeed, the algorithm was able to classify and localize the scratches in the image better than the object detection model. The preliminary results of using Mask R-CNN can be found below. 
+							</p>
+							<img src="img/instance_segmentation.png" alt="Image" style="max-width:50%; ">
+						</div>
+					</div>
+				</div>
+			</div>
+		
+				<!-- Portfolio Modal 1 -->
+		<div id="motorComm" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
 		
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Instance Segmentation</h4>
+						<h4 class="modal-title">Establishing Communication with Dynamixel Smart Serial Servos</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 					</div>
 		
 					<div class="modal-body text-center">
-						<!-- <img class="card-img-top img-thumbnail" src="img/enclosureRedesign.png" alt="Image" style="max-width:50%; "> -->
+						<img src="img/dynamixel_comm_pic.jpg" alt="Image" style="max-width:50%; ">
 						<p style="text-align: justify; padding-top: 5%">
-								In the previous term, an object detection algorithm called the Single-shot Multibox Detector (SSD) (Liu et al., 2016) was used to classify and localize defects in an image. The algorithm however has a limitation since it can only localizes defects in terms of bounding boxes, and thus is not able to quantify the size of the defects perfectly. An example of the output from object detection model is shown in the figure below.
+							Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
+							However, since two different types of servos are being used (which use two different voltage levels), two Robotis developed controllers were purchased to allow us to operate at the distinct voltage levels of our motor types. The electronics were assembled to establish communication with the XL series motor this week - using a variable buck converter to reduce a fixed 12V source to 7.4V, the level needed for the XL series motor. Currently, we are able to communciate to the motors from a laptop->controller->motor using serial communication. The next goal moving forward is to utilise a RasberryPi to communicate to the controller using UART or USB (still under investigation). In parallel, electronics assembly for the AX series motors will be completed this week to allow for full communication with all motors. In addition, this week, backdrivability tests will be conducted to see how to read status information from the motors.
 						</p>
-						<img class="card-img-top img-thumbnail" src="img/singleshot.gif" alt="Image" style="max-width:50%; ">
-						<p style="text-align: justify; padding-top: 5%">
-								In contrast, instance segmentation algorithms, like the Mask R-CNN (He et al., 2017), are designed to localize object in an image on the pixel level. This is definitely desirable for the application of detecting defects, since one of the metrics to quantify defects are by measuring the size of the defects. In order to test the algorithm, a Mask R-CNN model was trained on a small dataset that contains images with scratches. Indeed, the algorithm was able to classify and localize the scratches in the image better than the object detection model. The preliminary results of using Mask R-CNN can be found below. 
-						</p>
-						<img class="card-img-top img-thumbnail" src="img/instance_segmentation.png" alt="Image" style="max-width:50%; ">
+						<embed src="img/dynamixel_comm.mp4" width="325" height="230" allowfullscreen="true" />
+					</div>
+			</div>
+			</div>
+		</div>
+	
+				<!-- Portfolio Modal 1 -->
+				<div id="armRedesign" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Robotic Arm Redesigns</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/arm_redesign_pic.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+									The arm was assembled from the shoulder to the end effector, during this process mistakes in the original design were marked down and used to inform a redesign. The issues mostly consisted of interference, wrong hole measurements and a lack of counterbores for the bolt heads. The arm has 5 plastic parts that make up the frame, the base plate, the turntable, the humerus, the radius and the camera mount. Each part is connected to the next part through one of the four motors and fastened using bolt and nuts. 
+									The base plate lacked counterbore holes, without them the turntable would interfere during its rotation. The new base plate included the counterbore holes. The second version of the base plate also include a space for the bolts to lower the motor and give room for the wires to pass through. 
+									The turntable’s design had a few flaws, the fillets facing motor 1 interfered with the motor’s motion reducing the range of motion from 180 degrees to 15 degrees. The second version of the turntable has a much slimmer frame without fillets facing the motors allowing the full range of motion.
+									When fully assembled the humerus wasn’t securely held at the shoulder joint allowing it to shake significantly during trial operations. The bolt heads on elbow side interfered with the radius. To address those issues, a hook like protrusion was added to the shoulder end of the humerus allowing the weight of the arm to be supported on both sides during operation. Counterbores were added to the holes on the wrist.
+									The radius’ elbow cutout restricted the range of motion of the arm. To counteract this the cutout was lengthened.
+									
+									The arm when assembled, lacking the camera and the wiring, weighed in at 0.9lbs which meant  the addition X grams of from the cameras and wiring would take it over the X weight limit. To reduce the weight the heaviest pieces, the humerus and the radius were lightened.  By introducing a cutout in the middle of each piece X lbs was removed.
+									
+								</p>
+								<embed src="img/arm_redesign.mp4" width="325" height="230" allowfullscreen="true" />
+							</div>
+					</div>
 					</div>
 				</div>
-			</div>
-		</div>
 	
-			<!-- Portfolio Modal 1 -->
-	<div id="motorComm" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
+				<!-- Portfolio Modal 1 -->
+				<div id="electricalAssembly" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Completing Electrical Assembly of Robotic Arm</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/motor_controllers.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+									The robotic arm uses 2 types of motors, operating at 11.1V and 7.4V. Consequently, since other devices in the project operate at 5V, the team agreed to use a 12V supply and use a buck converter to create three voltage rails (11.1V, 7.4V, and 5V). After connecting and tuning the various buck converters, the team tested if all motors were able to connect to the their respective controller. Since Dynamixel motors use different protocol (USB2DYNAMIXEL), a unique, half-duplex capable controller that is compatible for both types of motors was used to communicate with the serial servos. 
 	
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title">Establishing Communication with Dynamixel Smart Serial Servos</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									In summary, 3 buck converters were used, 2 Dynamixel controllers were used, and a 12V, 100W power supply that is CSA approved.
+								</p>
+							</div>
+					</div>
+					</div>
 				</div>
 	
-				<div class="modal-body text-center">
-					<img class="card-img-top img-thumbnail" src="img/dynamixel_comm_pic.jpg" alt="Image" style="max-width:50%; ">
-					<p style="text-align: justify; padding-top: 5%">
-						Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
-						However, since two different types of servos are being used (which use two different voltage levels), two Robotis developed controllers were purchased to allow us to operate at the distinct voltage levels of our motor types. The electronics were assembled to establish communication with the XL series motor this week - using a variable buck converter to reduce a fixed 12V source to 7.4V, the level needed for the XL series motor. Currently, we are able to communciate to the motors from a laptop->controller->motor using serial communication. The next goal moving forward is to utilise a RasberryPi to communicate to the controller using UART or USB (still under investigation). In parallel, electronics assembly for the AX series motors will be completed this week to allow for full communication with all motors. In addition, this week, backdrivability tests will be conducted to see how to read status information from the motors.
-					</p>
-					<embed src="img/dynamixel_comm.mp4" width="325" height="230" allowfullscreen="true" />
+				
+				<!-- Portfolio Modal 1 -->
+				<div id="backdrive" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Recording arm positions and playback</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/backdrive_pic.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+										In contrast, instance segmentation algorithms, like the Mask R-CNN (He et al., 2017), are designed to localize object in an image on the pixel level. This is definitely desirable for the application of detecting defects, since one of the metrics to quantify defects are by measuring the size of the defects. In order to test the algorithm, a Mask R-CNN model was trained on a small dataset that contains images with scratches. Indeed, the algorithm was able to classify and localize the scratches in the image better than the object detection model. The preliminary results of using Mask R-CNN can be found below. 
+								</p>
+								<embed src="img/backdrive.mp4" width="325" height="230" allowfullscreen="true" />
+							</div>
+					</div>
+					</div>
 				</div>
-		</div>
-		</div>
-	</div>
-
-			<!-- Portfolio Modal 1 -->
-			<div id="armRedesign" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-			
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title">Robotic Arm Redesigns</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						</div>
-			
-						<div class="modal-body text-center">
-							<img class="card-img-top img-thumbnail" src="img/arm_redesign_pic.jpg" alt="Image" style="max-width:50%; ">
-							<p style="text-align: justify; padding-top: 5%">
-								The arm was assembled from the shoulder to the end effector, during this process mistakes in the original design were marked down and used to inform a redesign. The issues mostly consisted of interference, wrong hole measurements and a lack of counterbores for the bolt heads. The arm has 5 plastic parts that make up the frame, the base plate, the turntable, the humerus, the radius and the camera mount. Each part is connected to the next part through one of the four motors and fastened using bolt and nuts. 
-								The base plate lacked counterbore holes, without them the turntable would interfere during its rotation. The new base plate included the counterbore holes. The second version of the base plate also include a space for the bolts to lower the motor and give room for the wires to pass through. 
-								The turntable’s design had a few flaws, the fillets facing motor 1 interfered with the motor’s motion reducing the range of motion from 180 degrees to 15 degrees. The second version of the turntable has a much slimmer frame without fillets facing the motors allowing the full range of motion.
-								When fully assembled the humerus wasn’t securely held at the shoulder joint allowing it to shake significantly during trial operations. The bolt heads on elbow side interfered with the radius. To address those issues, a hook like protrusion was added to the shoulder end of the humerus allowing the weight of the arm to be supported on both sides during operation. Counterbores were added to the holes on the wrist.
-								The radius’ elbow cutout restricted the range of motion of the arm. To counteract this the cutout was lengthened.
-								
-								The arm when assembled, lacking the camera and the wiring, weighed in at 0.9lbs which meant  the addition X grams of from the cameras and wiring would take it over the X weight limit. To reduce the weight the heaviest pieces, the humerus and the radius were lightened.  By introducing a cutout in the middle of each piece X lbs was removed.
-								
-							</p>
-							<embed src="img/arm_redesign.mp4" width="325" height="230" allowfullscreen="true" />
-						</div>
-				</div>
-				</div>
-			</div>
-
-			<!-- Portfolio Modal 1 -->
-			<div id="electricalAssembly" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-			
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title">Completing Electrical Assembly of Robotic Arm</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						</div>
-			
-						<div class="modal-body text-center">
-							<img class="card-img-top img-thumbnail" src="img/motor_controllers.jpg" alt="Image" style="max-width:50%; ">
-							<p style="text-align: justify; padding-top: 5%">
-								The robotic arm uses 2 types of motors, operating at 11.1V and 7.4V. Consequently, since other devices in the project operate at 5V, the team agreed to use a 12V supply and use a buck converter to create three voltage rails (11.1V, 7.4V, and 5V). After connecting and tuning the various buck converters, the team tested if all motors were able to connect to the their respective controller. Since Dynamixel motors use different protocol (USB2DYNAMIXEL), a unique, half-duplex capable controller that is compatible for both types of motors was used to communicate with the serial servos. 
-
-								In summary, 3 buck converters were used, 2 Dynamixel controllers were used, and a 12V, 100W power supply that is CSA approved.
-							</p>
-						</div>
-				</div>
-				</div>
-			</div>
-
-			
-			<!-- Portfolio Modal 1 -->
-			<div id="backdrive" class="modal fade" role="dialog">
-				<div class="modal-dialog modal-lg">
-			
-					<!-- Modal content-->
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title">Recording arm positions and playback</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						</div>
-			
-						<div class="modal-body text-center">
-							<img class="card-img-top img-thumbnail" src="img/backdrive_pic.jpg" alt="Image" style="max-width:50%; ">
-							<p style="text-align: justify; padding-top: 5%">
-									In contrast, instance segmentation algorithms, like the Mask R-CNN (He et al., 2017), are designed to localize object in an image on the pixel level. This is definitely desirable for the application of detecting defects, since one of the metrics to quantify defects are by measuring the size of the defects. In order to test the algorithm, a Mask R-CNN model was trained on a small dataset that contains images with scratches. Indeed, the algorithm was able to classify and localize the scratches in the image better than the object detection model. The preliminary results of using Mask R-CNN can be found below. 
-							</p>
-							<embed src="img/backdrive.mp4" width="325" height="230" allowfullscreen="true" />
-						</div>
-				</div>
-				</div>
-			</div>
-		
+	
 </html>
