@@ -28,7 +28,11 @@
 	margin-bottom: 30px;
 	height: 90%;
   }
-  
+
+.card-img-top {
+	height: 300px;
+	}
+
   .hero {
 	height: 100vh;
 	min-height: auto;
